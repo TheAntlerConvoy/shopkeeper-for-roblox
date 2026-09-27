@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopkeeper for Roblox Privacy Policy</title>
+<meta name="description" content="How the Shopkeeper for Roblox browser extension handles your data.">
+<style>
+  :root { --bg: #ffffff; --fg: #1a1d22; --muted: #5a6069; --line: #dfe2e7; --accent: #15814f; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15161a; --fg: #eceef1; --muted: #a3a8b0; --line: #30333a; --accent: #3cc486; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .summary { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 20px 0; }
+  .summary p { margin: 0; }
+  code { font-size: 14px; }
+  footer { margin-top: 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Shopkeeper for Roblox Privacy Policy</h1>
+  <p class="muted">Effective September 26, 2026</p>
+
+  <div class="summary">
+    <p>Shopkeeper for Roblox never reads, stores or sends your Roblox login cookie (.ROBLOSECURITY), your password or any other Roblox account data. It has no server of its own and does not collect analytics. The developer does not receive any of your data. The only outside service it talks to is ExtensionPay, and only to check whether you have paid for Pro.</p>
+  </div>
+
+  <h2>Your Roblox login</h2>
+  <p>Shopkeeper does not ask for the browser's cookies permission, so it cannot read your cookies. Roblox also marks its login cookie as HttpOnly, which means scripts on a web page cannot read it either.</p>
+  <p>Shopkeeper only runs on the Roblox Creator Hub (create.roblox.com). When you use it, it sends requests from that page to Roblox's own servers, the same servers the Creator Hub pages use. Your browser adds your normal Roblox login to those requests by itself, the same way it does when you use the Creator Hub without the extension. Shopkeeper also passes along Roblox's standard security token (called x-csrf-token), which Roblox requires for every change. That token is kept in memory while the page is open and is never saved or sent anywhere else.</p>
+
+  <h2>What Shopkeeper reads from Roblox</h2>
+  <p>When you open Shopkeeper on one of your experiences, it asks Roblox for the game passes and developer products in that experience: their IDs, names, descriptions, prices, whether they are on sale, their icons and, if you ask for them, the sales counts of the game passes. It also asks Roblox for the experience's name. It uses this information to show you the list and to build the preview of a change. It does not read your profile, friends, messages, inventory, Robux balance or anything else on your account.</p>
+  <p>When you click Apply on a preview, Shopkeeper sends the changes you approved to Roblox, one at a time. It only makes changes that you could make by hand in the Creator Hub.</p>
+
+  <h2>What Shopkeeper stores</h2>
+  <p>Shopkeeper stores the following in your browser's extension storage (in Chrome or Microsoft Edge) on your own computer:</p>
+  <ul>
+    <li>A history of the bulk changes you made with it: the experience ID and name, and for each item its ID, name and the old and new values that were changed. This is what makes Undo possible. It keeps the last 100 changes, and you can delete it at any time with "Clear history" in the History tab.</li>
+    <li>Presets you save in the Create tab.</li>
+    <li>Whether you have paid for Pro, so it does not need to check with ExtensionPay every time.</li>
+  </ul>
+  <p>None of this is sent to the developer or to anyone else. Removing the extension deletes all of it.</p>
+
+  <h2>Payments and Pro</h2>
+  <p>Pro is sold through <a href="https://extensionpay.com">ExtensionPay</a>, and payments are processed by <a href="https://stripe.com/privacy">Stripe</a>. When you pay, you enter your email address and payment details on ExtensionPay's and Stripe's own pages, not inside the extension. Shopkeeper never sees your card details.</p>
+  <p>To know whether Pro is active, the extension keeps a random ExtensionPay key in your browser's synced extension storage and asks extensionpay.com for the status of that key. No Roblox data is ever sent to ExtensionPay. The developer can see the email address and payment status of paying users in the ExtensionPay dashboard, and uses them only to provide Pro and to answer support requests. ExtensionPay's and Stripe's own privacy policies describe how they handle your information.</p>
+
+  <h2>Files</h2>
+  <p>CSV exports are saved to your computer. CSV files and images you choose for an import are read on your computer, and the images are uploaded only to Roblox, as the icons of the items you create or update. Nothing is uploaded anywhere else.</p>
+
+  <h2>What Shopkeeper does not do</h2>
+  <ul>
+    <li>It does not sell, rent or share your data.</li>
+    <li>It does not show ads or track you across websites.</li>
+    <li>It does not run on any website other than create.roblox.com and extensionpay.com.</li>
+    <li>It does not use your data for anything other than the bulk tools and providing Pro. This use of data follows the Chrome Web Store User Data Policy, including its Limited Use requirements, and the Microsoft Edge Add-ons developer policies.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>storage</code>: saves the change history, your presets and your Pro status on your computer, as described above.</li>
+    <li>create.roblox.com: the extension's script runs on the Creator Hub so it can show its tools there and send the changes you approve to Roblox.</li>
+    <li>extensionpay.com: lets ExtensionPay's payment page tell the extension that a payment has gone through.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Shopkeeper does not collect personal information from anyone. It is not directed at children under 13, and payments through ExtensionPay are meant for adults or with a parent's permission.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <a href="mailto:support@theantlerconvoy.com">support@theantlerconvoy.com</a>.</p>
+
+  <footer class="muted">Shopkeeper for Roblox is not affiliated with, endorsed by or sponsored by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</footer>
+</main>
+</body>
+</html>

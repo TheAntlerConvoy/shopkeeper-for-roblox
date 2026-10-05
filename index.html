@@ -6,8 +6,8 @@
 <title>Shopkeeper for Roblox</title>
 <meta name="description" content="Bulk create and edit Roblox game passes and developer products in the Creator Hub, with a preview before every change and undo after it.">
 <style>
-  :root { --bg: #ffffff; --fg: #1a1d22; --muted: #5a6069; --line: #dfe2e7; --accent: #15814f; color-scheme: light; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #15161a; --fg: #eceef1; --muted: #a3a8b0; --line: #30333a; --accent: #3cc486; color-scheme: dark; } }
+  :root { --bg: #ffffff; --fg: #1a1d22; --muted: #5a6069; --line: #dfe2e7; --accent: #15814f; --accent-fg: #ffffff; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15161a; --fg: #eceef1; --muted: #a3a8b0; --line: #30333a; --accent: #3cc486; --accent-fg: #15161a; color-scheme: dark; } }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
@@ -17,6 +17,8 @@
   ul { padding-left: 22px; }
   a { color: var(--accent); }
   .muted { color: var(--muted); }
+  .install { display: inline-block; margin: 6px 0 4px; padding: 11px 20px; border-radius: 10px; background: var(--accent); color: var(--accent-fg); font-weight: 700; text-decoration: none; }
+  .install:hover { filter: brightness(1.08); }
   footer { margin-top: 40px; font-size: 14px; }
 </style>
 </head>
@@ -24,6 +26,7 @@
 <main>
   <h1>Shopkeeper for Roblox</h1>
   <p class="muted">A browser extension that adds bulk tools for game passes and developer products to the Roblox Creator Hub.</p>
+  <p><a class="install" href="https://chromewebstore.google.com/detail/shopkeeper-for-roblox-bul/iddgphmgfagnnofmalcobcgpagohpofm">Add to Chrome</a> <span class="muted">Free for up to 10 items at a time, with Pro for more. Coming soon to Microsoft Edge.</span></p>
 
   <h2>What it does</h2>
   <ul>
